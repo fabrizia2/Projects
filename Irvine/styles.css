@@ -1,0 +1,95 @@
+/* Reset CSS */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('background-image.jpg'); /* Set background image for the entire page */
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content {
+    color: #333;
+    padding: 100px 0;
+}
+
+.main-content .container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
