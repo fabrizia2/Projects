@@ -1,0 +1,416 @@
+/* styles.css */
+
+/* Resetting default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: linear-gradient(to right, #4CAF50, #87CEEB, #C0C0C0); /* Gradient background using the colors */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.brand-name h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffffff; /* White */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2bc244; /* Coral color on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+.slider {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 33.33%;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 90%;
+    height: 90%;
+    display: block;
+}
+
+.write-up {
+    margin-bottom: 20px;
+}
+
+.write-up h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.write-up p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+.images-grid {
+    margin-bottom: 20px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-col {
+    flex: 0 0 calc(33.33% - 10px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-col img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-col img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.image-col p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333333;
+}
+
+.video {
+    margin-bottom: 20px;
+    height: fit-content;
+}
+
+.images-three {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.images-three .image {
+    flex: 0 0 calc(33.33% - 10px);
+}
+
+.images-three .image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.images-three .image img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.more-write-ups .write-up {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: linear-gradient(to right, #4CAF50, #87CEEB, #C0C0C0);
+    padding: 20px;
+    text-align: center;
+}
+
+/* FAQ page */
+.faq-list {
+    list-style: none;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-list li {
+    margin-bottom: 20px;
+}
+
+.faq-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Green color */
+}
+
+.faq-list h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #87CEEB; /* Soft blue color */
+}
+
+.faq-list p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #C0C0C0; /* Silver slate color */
+}
+
+/* Contact page */
+.contact-form {
+    margin-bottom: 40px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: #ffffff; /* White */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.map {
+    margin-bottom: 40px;
+}
+
+.map h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
+
+
+/* styles.css *
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0c5003;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.brand-name h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fdfcfc;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    height: 80vh;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-height: 90%;
+}
+
+.slide {
+    width: 90%;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.close {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Media query for small screens */
+/* styles.css */
+/* Media query for small screens *
+@media screen and (max-width: 768px) {
+    .nav-links ul {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #0c0c0c;
+        font-weight: bold;
+        justify-content: space-around;
+    }
+    
+
+    .modal {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        top: 100px; /* Adjust this value as needed *
+        right: 10px; /* Adjust this value as needed *
+        width: 30%;
+        max-width: 300px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-content {
+        padding: 20px;
+        position: relative;
+    }
+
+    .close {
+        display: inline;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}*/
