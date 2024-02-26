@@ -23,34 +23,3 @@ function sendMessage() {
     chatBox.appendChild(newMessage);
     document.getElementById('chat-input').value = '';
 }
-
-
-/*
-// Selecting all slides
-var slides = document.querySelectorAll('.slide');
-var currentSlide = 0;
-
-// Function to show slides
-function showSlide(n) {
-    slides[currentSlide].style.display = 'none';
-    currentSlide = (n + slides.length) % slides.length;
-    slides[currentSlide].style.display = 'block';
-}
-
-// Initial call to show the first slide
-showSlide(currentSlide);
-
-// Function to navigate to the next slide
-function nextSlide() {
-    showSlide(currentSlide + 1);
-}
-
-// Automatically move to the next slide every 5 seconds
-setInterval(nextSlide, 5000);
-
-// script.js
-function toggleNav() {
-    var modal = document.getElementById('navModal');
-    modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
-}
-*/
