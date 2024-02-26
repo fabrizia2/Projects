@@ -1,4 +1,55 @@
 /* Reset CSS */
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(253, 253, 253, 0.15);
+    color: #fffcfc;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Set header position to fixed */
+    width: 100%; /* Set header width to full */
+    top: 0; /* Place header at the top of the viewport */
+    z-index: 1000; /* Ensure header stays on top of other content */
+}
+
+header h1 {
+    margin: 0;
+    width: 30%;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fdfbfb;
+    text-decoration: none;
+}
+
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -17,48 +68,18 @@ h2 {
 
 p {
     font-size: 120%;
+    color: aliceblue;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
-header {
-    background: transparent;
-    color: #fff;
-    padding: 20px 0;
-    
-}
 
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
 
 body {
-    background-image: url('images/img3.jpg'); /* Set background image for the entire page */
-    background-size: cover;
+    background-image: url('images/ab24.png'); /* Set background image for the entire page */
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #333;
 }
 
 .main-content {
@@ -91,14 +112,16 @@ body {
 
 .social-icons a {
     margin-bottom: 10px;
+    color: #fff;
+    
 }
 
-.social-icons img {
-    width: 40px;
-    height: 40px;
+.fab {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    font-size: 24px;
 }
-
 footer {
     background-color: #333;
     color: #fff;
