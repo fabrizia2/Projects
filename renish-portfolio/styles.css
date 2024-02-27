@@ -1,0 +1,144 @@
+/* Reset CSS */
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(51, 51, 51, 0.5);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1090%;
+    color: #e66006;
+}
+
+h2 {
+    font-size: 210%;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 120%;
+    color: aliceblue;
+}
+
+body {
+    background-image: url('images/ab24.png'); /* Set background image for the entire page */
+    background-size: contai;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+}
+
+.main-content {
+    color: #333;
+    padding: 100px 0;
+}
+
+.main-content .container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text {
+    margin-right: 20px;
+    margin-left: 25px;
+    width: 20%;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin-bottom: 10px;
+    color: #fff;
+    
+}
+
+.fab {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+a:hover, a:active, i:hover, i:active{
+    color: #e66006;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 400%;
+    }
+    p {
+        font-size: 100%;
+        width: 200%;
+    }
+    .content {
+        margin-top: 20px;
+    }
+}

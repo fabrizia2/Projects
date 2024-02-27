@@ -1,0 +1,216 @@
+/* Resetting default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+/* Container styles */
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.container h2 {
+    margin-bottom: 10px;
+    color: #e66006;
+}
+
+header {
+    background-color: rgb(51, 51, 51, 0.5);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Content styles */
+.content {
+    padding-top: 50px; /* Adjusted padding-top to account for the fixed header */
+    text-align: center;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+    color: #e66006;
+}
+
+.content p {
+    line-height: 1.6;
+    align-items: center;
+    
+}
+
+a:hover, a:active, i:hover, i:active{
+    color: #e66006;
+}
+
+/* Contact form styles */
+.contact {
+    padding: 40px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #ebe6e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0c0c0c;
+    color: #e66006;
+}
+
+/* Your existing CSS */
+
+/* Style for the gallery section */
+.gallery {
+    padding: 40px 0;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-col {
+    flex-basis: calc(33.33% - 20px); /* Three images per row with some spacing */
+    margin-bottom: 20px;
+}
+
+.image-col img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Social icons */
+.social-icons {
+    position: fixed;
+    top: 50%; /* Adjust vertical position as needed */
+    right: 0;
+    transform: translateY(-50%); /* Center vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.fab {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
