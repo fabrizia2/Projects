@@ -9,3 +9,10 @@
   to = "/FAMA/:splat"     # Specify the directory path for Age_calculator
   status = 200
   publish = "FAMA"       # Specify the directory to publish for Age_calculator
+
+# Publish settings for Irvine
+[[redirects]]
+  from = "/Irvine/*"       # Define the URL path for Irvine
+  to = "/Irvine/:splat"     # Specify the directory path for Irvine
+  status = 200
+  publish = "Irvine"       # Specify the directory to publish for Irvine
