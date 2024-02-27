@@ -6,7 +6,8 @@ body, h1, h2, p, ul, li {
 
 h2 {
     color: #e66006;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     font-size: 210%;
 }
 body {
@@ -73,6 +74,31 @@ nav ul li a {
     padding-top: 150px; /* Adjusted padding-top to account for the fixed header */
 }
 
+.slider {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 33.33%;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 90%;
+    height: 90%;
+    display: block;
+}
+
+.video {
+    margin-bottom: 20px;
+    height: fit-content;
+}
+
 .models-grid {
     display: flex;
     flex-wrap: wrap;
@@ -91,8 +117,29 @@ nav ul li a {
 }
 
 footer {
+    background-color: #0a0a0a;
+    justify-content: center;
+    align-items: center;
     color: #fff;
 }
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 8px;
+    color: #fff;
+  }
+
+  .containerf {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+    color: #fff;
+  }
 
 .social-icons {
     position: fixed;
@@ -102,6 +149,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #fff;
 }
 
 .social-icons a {
@@ -109,12 +157,56 @@ footer {
     color: #fff;
 }
 
-.fab {
+.fab, .far {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     font-size: 24px;
+    color: #fff;
 }
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .logoi {
+    text-align: center; /* Center align image and button */
+    margin-bottom: 20px; /* Add space between each item */
+    flex: 0 0 calc(15% - 20px); /* Set width for each item (4 items per row) */
+  }
+  
+  .logoi img {
+    width: 100%; /* Ensure image fills its container */
+    max-width: 100px; /* Limit image width */
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  
+  a {
+    text-decoration: none; /* Remove default underline */
+    color: #0a0a0a; /* Set link color */
+  }
+
+  .donate-btn {
+    background-color: #0a0a0a;
+    text-align: center;
+    justify-content: center;
+    color: #edf2f7;
+    padding: 1rem 1.3rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+    .donate-btn:hover {
+        background-color: #f8f8fa;
+        color: #0a0a0a;
+        border: #070708 1px solid;
+    }
 
 /* Display social icons horizontally on small screens */
 @media screen and (max-width: 768px) {
@@ -124,4 +216,9 @@ footer {
         justify-content: center; /* Align icons to the center */
         position: relativ; /* Change position to relative */
     }
+
+    .logoi {
+        flex: 0 0 calc(50% - 20px); /* Set width for each item (2 items per row) */
+      }
+    
 }
