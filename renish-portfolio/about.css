@@ -50,6 +50,7 @@ header {
     top: 0;
     z-index: 1000;
     display: flex;
+    border: 0.1px solid rgb(230, 96, 6, 0.5);
 }
 
 header h1 {
@@ -102,7 +103,7 @@ a:hover, a:active, i:hover, i:active{
 
 /* Contact form styles */
 .contact {
-    padding: 40px 0;
+    padding: 4px 0;
 }
 
 .contact h2 {
@@ -175,13 +176,26 @@ a:hover, a:active, i:hover, i:active{
 
 .image-col {
     flex-basis: calc(33.33% - 20px); /* Three images per row with some spacing */
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .image-col img {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 66%;
     border-radius: 10px;
+}
+
+.image-col img:hover {
+    transform: scale(1.1);
+}
+
+.image-col h2 {
+    margin-top: 10%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Social icons */
@@ -213,4 +227,6 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    border-radius: 50%;
+    border: 0.1px solid rgb(230, 96, 6, 0.5);
 }

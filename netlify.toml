@@ -16,3 +16,10 @@
   to = "/Irvine/:splat"     # Specify the directory path for Irvine
   status = 200
   publish = "Irvine"       # Specify the directory to publish for Irvine
+
+# Publish settings for my portfolio
+[[redirects]]
+  from = "/renish-portfolio/*"
+  to = "/renish-portfolio/:splat"
+  status = 200
+  publish = "renish-portfolio"

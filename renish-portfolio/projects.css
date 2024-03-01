@@ -1,0 +1,152 @@
+/* Reset CSS */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #e66006;
+    margin-bottom: 10px;
+    font-size: 210%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+}
+
+
+a:hover, a:active, i:hover, i:active{
+    color: #e66006;
+}
+
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(51, 51, 51, 0.5);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    border: 0.1px solid rgb(230, 96, 6, 0.5);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a, a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    padding-top: 150px; /* Adjusted padding-top to account for the fixed header */
+}
+
+.models-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.model {
+    flex-basis: calc(33.33% - 20px); /* Three models per row with 20px spacing between */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.model img {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.model img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.model h2 {
+    margin-top: 5%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #e66006;
+}
+
+.social-icons {
+    position: fixed;
+    top: 50%; /* Adjust vertical position as needed */
+    right: 0;
+    transform: translateY(-50%); /* Center vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.fab {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+/* Display social icons horizontally on small screens */
+@media screen and (max-width: 768px) {
+    .social-icons {
+        margin-top: 330px;
+        flex-direction: row; /* Display icons horizontally */
+        justify-content: center; /* Align icons to the center */
+        position: relativ; /* Change position to relative */
+    }
+
+    .model {
+        width: calc(100% - 20px); /* Full width for small screens */
+    }
+
+    .model img {
+        width: 100%;
+    }
+}
