@@ -135,18 +135,47 @@ footer {
 
 /* Display social icons horizontally on small screens */
 @media screen and (max-width: 768px) {
-    .social-icons {
-        margin-top: 330px;
-        flex-direction: row; /* Display icons horizontally */
-        justify-content: center; /* Align icons to the center */
-        position: relativ; /* Change position to relative */
-    }
-
     .model {
-        width: calc(100% - 20px); /* Full width for small screens */
+        flex-basis: calc(100% - 20px); /* Adjust width to 100% for one model per row */
+    }
+    .content {
+        padding-top: 20px; /* Adjusted padding-top */
+        margin-top: 20px;
     }
 
-    .model img {
-        width: 100%;
+    .social-icons {
+        justify-content: center; /* Align icons horizontally */
+        align-items: center; /* Align icons vertically */
+        flex-wrap: wrap; /* Allow icons to wrap to next line if needed */
+        margin-top: 20px; /* Add spacing above social icons */
     }
+
+    .fab, .far {
+        margin: 0 15px; /* Add spacing between icons */
+    }
+
+    .image-col {
+        flex-basis: calc(100% - 20px); /* Adjust width to 100% for one image per row */
+    }
+
+    footer {
+        padding: 10px 0; /* Adjust padding */
+        margin-top: 20px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Adjust padding as needed */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Add spacing between list items */
+    }
+
+    h2 {
+        margin-top: 100px;
+    }
+
+    /* Additional styles as needed for smaller screens */
 }

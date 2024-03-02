@@ -111,7 +111,7 @@ body {
     
 }
 
-.fab {
+.fab, .far {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -123,16 +123,12 @@ a:hover, a:active, i:hover, i:active{
 }
 
 footer {
-    background-color: rgb(51, 51, 51, 0.9);
+    background-color: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
     border-radius: 50%;
-    border: 2px solid #e66006;
-}
-
-footer p {
-    margin: 0;
+    border: 0.1px solid rgb(230, 96, 6, 0.5);
 }
 
 @media screen and (max-width: 768px) {
@@ -145,5 +141,52 @@ footer p {
     }
     .content {
         margin-top: 20px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Adjust padding as needed */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Add spacing between list items */
+    }
+
+    h3 {
+        font-size: 300%; /* Adjust font size as needed */
+    }
+    h2 {
+        margin-top: 100px;
+    }
+
+    p {
+        font-size: 80%; /* Adjust font size as needed */
+        width: 100%; /* Make paragraphs full width */
+        margin-bottom: 20px; /* Add spacing between paragraphs */
+    }
+
+    .content {
+        flex-direction: colum;
+        align-items: center;
+    }
+
+    .text {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .social-icons {
+        display: fle;
+        justify-content: center; /* Align icons horizontally */
+        align-items: center; /* Align icons vertically */
+        flex-wrap: wrap; /* Allow icons to wrap to next line if needed */
+        margin-top: 20px; /* Add spacing above social icons */
+    }
+
+    .fab, .far {
+        margin: 0 10px; /* Add spacing between icons */
     }
 }

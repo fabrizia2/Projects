@@ -214,7 +214,7 @@ a {
     color: #fff;
 }
 
-.fab {
+.fab, .far{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -230,3 +230,59 @@ footer {
     border-radius: 50%;
     border: 0.1px solid rgb(230, 96, 6, 0.5);
 }
+
+/* Your existing styles... */
+
+@media screen and (max-width: 768px) {
+    .container1, .container2, .container {
+        width: 90%; /* Adjust container width */
+    }
+
+    /* Adjust padding for smaller screens */
+    header {
+        padding: 10px 0;
+    }
+
+    .content {
+        padding-top: 20px; /* Adjusted padding-top */
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        display: fle;
+        justify-content: center; /* Align icons horizontally */
+        align-items: center; /* Align icons vertically */
+        flex-wrap: wrap; /* Allow icons to wrap to next line if needed */
+        margin-top: 20px; /* Add spacing above social icons */
+    }
+
+    .fab, .far {
+        margin: 0 10px; /* Add spacing between icons */
+    }
+
+    .image-col {
+        flex-basis: calc(100% - 20px); /* Adjust width to 100% for one image per row */
+    }
+
+    footer {
+        padding: 10px 0; /* Adjust padding */
+        margin-top: 20px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Adjust padding as needed */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Add spacing between list items */
+    }
+
+    h2 {
+        margin-top: 100px;
+    }
+
+    /* Additional styles as needed for smaller screens */
+}
+
