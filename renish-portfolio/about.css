@@ -50,6 +50,7 @@ header {
     top: 0;
     z-index: 1000;
     display: flex;
+    border: 0.1px solid rgb(230, 96, 6, 0.5);
 }
 
 header h1 {
@@ -102,7 +103,7 @@ a:hover, a:active, i:hover, i:active{
 
 /* Contact form styles */
 .contact {
-    padding: 40px 0;
+    padding: 4px 0;
 }
 
 .contact h2 {
@@ -175,13 +176,26 @@ a:hover, a:active, i:hover, i:active{
 
 .image-col {
     flex-basis: calc(33.33% - 20px); /* Three images per row with some spacing */
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .image-col img {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 66%;
     border-radius: 10px;
+}
+
+.image-col img:hover {
+    transform: scale(1.1);
+}
+
+.image-col h2 {
+    margin-top: 10%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Social icons */
@@ -200,7 +214,7 @@ a:hover, a:active, i:hover, i:active{
     color: #fff;
 }
 
-.fab {
+.fab, .far{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -213,4 +227,62 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    border-radius: 50%;
+    border: 0.1px solid rgb(230, 96, 6, 0.5);
 }
+
+/* Your existing styles... */
+
+@media screen and (max-width: 768px) {
+    .container1, .container2, .container {
+        width: 90%; /* Adjust container width */
+    }
+
+    /* Adjust padding for smaller screens */
+    header {
+        padding: 10px 0;
+    }
+
+    .content {
+        padding-top: 20px; /* Adjusted padding-top */
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        display: fle;
+        justify-content: center; /* Align icons horizontally */
+        align-items: center; /* Align icons vertically */
+        flex-wrap: wrap; /* Allow icons to wrap to next line if needed */
+        margin-top: 20px; /* Add spacing above social icons */
+    }
+
+    .fab, .far {
+        margin: 0 10px; /* Add spacing between icons */
+    }
+
+    .image-col {
+        flex-basis: calc(100% - 20px); /* Adjust width to 100% for one image per row */
+    }
+
+    footer {
+        padding: 10px 0; /* Adjust padding */
+        margin-top: 20px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Adjust padding as needed */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Add spacing between list items */
+    }
+
+    h2 {
+        margin-top: 100px;
+    }
+
+    /* Additional styles as needed for smaller screens */
+}
+

@@ -17,6 +17,7 @@ header {
     top: 0;
     z-index: 1000;
     display: flex;
+    border: 0.1px solid rgb(230, 96, 6, 0.5);
 }
 
 header h1 {
@@ -50,8 +51,9 @@ body, h1, h2, h3, p, ul, li {
 }
 
 h3 {
-    font-size: 1090%;
+    font-size: 500%;
     color: #e66006;
+    padding-bottom: 50%;
 }
 
 h2 {
@@ -62,12 +64,13 @@ h2 {
 
 p {
     font-size: 120%;
-    color: aliceblue;
+    color: rgb(226, 222, 219);
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 body {
-    background-image: url('images/ab24.png'); /* Set background image for the entire page */
-    background-size: contai;
+    background-image: url('images/fav1b.png'); /* Set background image for the entire page */
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #333;
@@ -108,7 +111,7 @@ body {
     
 }
 
-.fab {
+.fab, .far {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -124,10 +127,8 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-}
-
-footer p {
-    margin: 0;
+    border-radius: 50%;
+    border: 0.1px solid rgb(230, 96, 6, 0.5);
 }
 
 @media screen and (max-width: 768px) {
@@ -140,5 +141,52 @@ footer p {
     }
     .content {
         margin-top: 20px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Adjust padding as needed */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Add spacing between list items */
+    }
+
+    h3 {
+        font-size: 300%; /* Adjust font size as needed */
+    }
+    h2 {
+        margin-top: 100px;
+    }
+
+    p {
+        font-size: 80%; /* Adjust font size as needed */
+        width: 100%; /* Make paragraphs full width */
+        margin-bottom: 20px; /* Add spacing between paragraphs */
+    }
+
+    .content {
+        flex-direction: colum;
+        align-items: center;
+    }
+
+    .text {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .social-icons {
+        display: fle;
+        justify-content: center; /* Align icons horizontally */
+        align-items: center; /* Align icons vertically */
+        flex-wrap: wrap; /* Allow icons to wrap to next line if needed */
+        margin-top: 20px; /* Add spacing above social icons */
+    }
+
+    .fab, .far {
+        margin: 0 10px; /* Add spacing between icons */
     }
 }
