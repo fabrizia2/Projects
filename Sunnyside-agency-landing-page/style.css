@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "barlow";
+  /* padding-bottom: 20px; */
+  display: grid;
+  justify-content: center;
+}
+header .fas {
+  display: none;
+}
+
+h1 {
+  font-family: "Fraunces";
+  font-weight: bolder;
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: hsl(210, 4%, 67%);
+}
+header {
+  background-image: url(./images/desktop/image-header.jpg);
+  height: 423px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 5%;
+}
+header .navigation ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+header button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  background: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: "fraunces";
+}
+header button:hover {
+  background-color: hsl(198, 62%, 26%);
+  color: white;
+}
+header h1 {
+  color: white;
+}
+.fa-bars {
+  margin-left: auto;
+  color: white;
+  margin-right: 10px;
+  font-size: 2rem;
+}
+.arrow img {
+  margin-top: 60px;
+  /* height: 60px; */
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* min-height: 2118px; */
+  grid-template-rows: 500px 500px;
+}
+.card1 {
+  background-image: url(./images/desktop/image-transform.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 2;
+}
+.card2 {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 15%;
+}
+.card2 a {
+  font-family: "fraunces";
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid hsl(51, 100%, 49%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.card2 a:hover {
+  border-bottom: 5px solid hsl(51, 100%, 49%);
+}
+.card2 h1 {
+  width: 250px;
+  margin-bottom: 20px;
+}
+.card3 {
+  background-image: url(./images/desktop/image-stand-out.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-row: inherit;
+}
+.card4 {
+  padding: 15%;
+}
+.card4 h1 {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.card4 a {
+  font-family: "fraunces";
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid hsl(7, 99%, 70%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.card4 a:hover {
+  border-bottom: 5px solid hsl(7, 99%, 70%);
+}
+.card5 {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 40% 0;
+  display: flex;
+  justify-content: center;
+  color: hsl(167, 40%, 24%);
+}
+
+.content {
+  position: absolute;
+  width: 300px;
+  bottom: 15%;
+  text-align: center;
+}
+.card5 .content p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: hsl(167, 40%, 24%);
+}
+
+.card6 {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  position: relative;
+  padding: 40% 0;
+  display: flex;
+  justify-content: center;
+  color: hsl(198, 62%, 26%);
+}
+.testimonial {
+  padding: 50px 5% 30px;
+  text-align: center;
+}
+.testimonial h3 {
+  letter-spacing: 5px;
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: hsl(232, 10%, 55%);
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.test {
+  padding: 30px;
+}
+
+.test img {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 20px;
+}
+.test p {
+  line-height: 1.8;
+}
+.test h4 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+span {
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(232, 10%, 55%);
+}
+
+.last-section-container {
+  display: grid;
+  grid-template-columns: repeat(4, 320px);
+  overflow: hidden;
+}
+.first {
+  padding: 60%;
+  background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.second {
+  padding: 60%;
+  background-image: url(./images/desktop/image-gallery-orange.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.third {
+  padding: 60%;
+  background-image: url(./images/desktop/image-gallery-cone.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.fourth {
+  padding: 60%;
+  background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.footer {
+  background-color: hsl(168, 34%, 41%);
+  width: 100%;
+  text-align: center;
+  margin-top: -3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.footer h1 {
+  margin-bottom: 20px;
+  color: hsl(167, 40%, 24%);
+  margin-left: 20px;
+}
+.footer ul li {
+  display: inline-block;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  margin-left: 40px;
+}
+.footer a:hover {
+  color: white;
+}
+.footer ul {
+  margin-bottom: 30px;
+}
+menu {
+  text-align: center;
+  margin-left: 20px;
+}
+.fab {
+  margin-right: 10px;
+  color: hsl(167, 40%, 24%);
+  font-size: 1.4rem;
+}
+.fab:hover {
+  color: white;
+}
+.mobile-section {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .mobile-section {
+    display: grid;
+    grid-template-columns: 300px 400px;
+    justify-content: center;
+  }
+  .last-section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    background-image: url(./images/mobile/image-header.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px 4%;
+  }
+  header nav {
+    justify-content: flex-start;
+    padding: 0px;
+  }
+  header .fas {
+    display: block;
+  }
+  header nav ul::before {
+    right: 0;
+    top: -40px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    content: "";
+    border-left: 65px solid transparent;
+    border-top: 65px solid transparent;
+    border-right: 25px solid white;
+    border-bottom: 25px solid rgb(255, 255, 255);
+    /* z-index: 15; */
+  }
+  .navigation {
+    position: absolute;
+    background: white;
+    top: -100%;
+    width: 350px;
+    padding: 20px;
+    left: 60px;
+    color: black;
+    transition: top 0.6s;
+  }
+  .showned {
+    top: 100px;
+    height: 300px;
+  }
+  header .navigation ul li a {
+    color: hsl(167, 40%, 24%);
+  }
+  header .navigation ul li {
+    display: block;
+    color: black;
+    margin-top: 20px;
+    /* background-color: white; */
+  }
+  header .navigation ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  header button {
+    background: hsl(51, 100%, 49%);
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+  header h1 {
+    margin-top: 40px;
+    /* text-align: center; */
+  }
+  .arrow {
+    margin-top: 50px;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 400px 400px 650px;
+  }
+  .card1 {
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url(./images/mobile/image-transform.jpg);
+  }
+  .card2 {
+    grid-row: 2;
+    text-align: center;
+  }
+  .card3 {
+    grid-row: 3;
+    background-image: url(./images/mobile/image-stand-out.jpg);
+    height: 400px;
+  }
+  .card4 {
+    grid-row: 4;
+    text-align: center;
+  }
+  .card5 {
+    grid-row: 5;
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+    padding: 90% 0;
+    background-repeat: no-repeat;
+  }
+  .card6 {
+    background-image: url(./images/mobile/image-photography.jpg);
+    grid-row: 6;
+    text-align: center;
+    padding: 80% 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .content {
+    bottom: 15%;
+  }
+  .text-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 0.9rem;
+  }
+  .test h4 {
+    margin-top: 10px;
+  }
+  .test {
+    width: 300px;
+    padding: 0;
+  }
+  .mobile-section {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: 200px;
+  }
+  .last-section {
+    display: none;
+  }
+  .mobile-section img {
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mobile-section {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .fas {
+    display: block;
+  }
+  .mobile-section img {
+    width: 180px;
+    height: 180px;
+  }
+  .footer a {
+    margin-left: 10px;
+  }
+  .navigation {
+    left: 40px;
+    width: 300px;
+  }
+}
