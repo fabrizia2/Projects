@@ -31,6 +31,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   text-align: center;
+  height: 35rem;
 }
 header a {
   text-decoration: none;
