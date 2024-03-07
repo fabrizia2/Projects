@@ -15,7 +15,7 @@ header .fas {
   display: none;
 }
 
-h1 {
+h1, h2 {
   font-family: "Fraunces";
   font-weight: bolder;
 }
@@ -27,8 +27,6 @@ p {
 }
 header {
   background-image: url(./images/desktop/image-header.jpg);
-  height: 423px;
-  width: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -50,22 +48,27 @@ header .navigation ul li {
   display: inline-block;
   margin-right: 20px;
 }
-header button {
+header .button {
+  color: black;
   padding: 8px 15px;
   border: none;
   border-radius: 20px;
-  width: 100px;
+  width: 10rem;
   background: white;
   text-transform: uppercase;
   font-weight: bolder;
   font-family: "fraunces";
 }
-header button:hover {
+header .button:hover {
   background-color: hsl(198, 62%, 26%);
   color: white;
 }
 header h1 {
   color: white;
+}
+
+.upper {
+  text-transform: uppercase;
 }
 .fa-bars {
   margin-left: auto;
@@ -97,7 +100,7 @@ header h1 {
 }
 .card2 a {
   font-family: "fraunces";
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   color: black;
   border-bottom: 3px solid hsl(51, 100%, 49%);
@@ -128,7 +131,7 @@ header h1 {
 }
 .card4 a {
   font-family: "fraunces";
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   color: black;
   border-bottom: 3px solid hsl(7, 99%, 70%);
@@ -160,7 +163,7 @@ header h1 {
 }
 .card5 .content p {
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 1rem;
   color: hsl(167, 40%, 24%);
 }
 
@@ -211,14 +214,14 @@ header h1 {
   margin-bottom: 10px;
 }
 span {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   color: hsl(232, 10%, 55%);
 }
 
 .last-section-container {
   display: grid;
-  grid-template-columns: repeat(4, 320px);
+  grid-template-columns: repeat(4, 22rem);
   overflow: hidden;
 }
 .first {
@@ -363,7 +366,7 @@ menu {
     justify-content: center;
     align-items: center;
   }
-  header button {
+  header .button {
     background: hsl(51, 100%, 49%);
     margin-top: 20px;
     margin-left: -20px;
