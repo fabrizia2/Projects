@@ -1,15 +1,15 @@
 /* Global */
-@import url(./global/global.css);
+@import url(./global.css);
 
 /* Header */
-@import url(./header/header.css);
+@import url(./header.css);
 
 /* Introduction */
-@import url(./introducao/introduction.css);
-@import url(./introducao/creations.css);
+@import url(./introduction.css);
+@import url(./creations.css);
 
 /* Footer */
-@import url(./footer/footer.css);
+@import url(./footer.css);
 
 /* Utility */
-@import url(./utility/typography.css);
+@import url(./typography.css);

@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 6rem;
+    margin-top: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.about-section .text {
+    width: 40%;
+}
+
+.about-section .image {
+    width: 50%; /* Adjust width as needed */
+    position: relative;
+}
+
+.about-section .image-container {
+    overflow: hidden;
+}
+
+.about-section .image img {
+    width: 100%;
+    height: 40rem;
+    display: block;
+}
+
+.about-section .prev, .about-section .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.about-section .prev {
+    left: 10px;
+}
+
+.about-section .next {
+    right: 10px;
+}
+
+
+.image-gallery {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.image-gallery img {
+    width: 30%;
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
