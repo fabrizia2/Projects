@@ -1,0 +1,113 @@
+.our-creations-container {
+  margin-top: 184px;
+}
+
+.our-creations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 80px;
+}
+
+.our-creations a,
+.our-creations-min a {
+  justify-self: end;
+  align-self: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--black);
+  padding: 13px 43px 13px 38px;
+  transition: all 0.3s ease-in-out;
+}
+
+.our-creations a:hover,
+.our-creations-min a:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.creations-art {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.creations-art article {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 175.78125%;
+  transition: all 0.3s ease-in-out;
+}
+
+.creations-art article::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #000, transparent);
+  transition: all 0.3s ease-in-out;
+}
+
+.creations-art article:hover::after {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.creations-art article:hover .creations-text h3 {
+  color: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+
+.creations-art picture {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.creations-art picture img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.creations-text {
+  position: absolute;
+  z-index: 1;
+  padding: 32px 40px;
+  margin-top: auto;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+}
+
+.creations-text h3 {
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .our-creations h2 {
+    font: 300 2rem/1 "Josefin Sans";
+  }
+  .creations-art {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .creations-art article {
+    padding-bottom: 50%;
+  }
+
+  .our-creations-min {
+    display: block;
+    text-align-last: center;
+    margin: 34px auto;
+  }
+}
