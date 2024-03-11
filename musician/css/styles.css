@@ -1,0 +1,218 @@
+/* Reset default margin and padding */
+body {
+    background-color: rgb(85, 85, 85, 0.9);
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: black;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: rgb(220, 231, 115); /* Change color on hover */
+  }
+  
+  .nav-links li a.active {
+    color: rgb(220, 231, 115); /* Active link color */
+  }
+  
+  /* Social icons */
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: rgb(220, 231, 115); /* Change color on hover */
+  }
+  
+  main {
+    padding-top: 80px; /* Adjust according to the height of your header */
+    display: flex;
+  }
+.section-container {
+    display: flex;
+    width: 100%;
+    margin: 0 10%;
+  }
+  
+  .section-left {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .section-right {
+    flex: 1;
+    position: relative; /* Ensure relative positioning for background image */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+
+.background-image {
+  background-image: url('../images/sheila1r.png');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 45%;
+  width: 50%;
+  height: 100%;
+  z-index: -1; /* Place the background image behind the content */  
+  background-position: right; /* Align background image to the right */
+}
+
+/*.section-left h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    color: rgb(220, 231, 115);
+    margin-bottom: 0px;
+  }*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr; /* Define column widths */
+    gap: 0px; /* Adjust gap between grid items as needed */
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+  }
+  .grid-container > div {
+    padding: 10px;
+    width: fit-content;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+  }
+  .span-two-rows {
+    grid-row: span 2; /* Span two rows */
+    font-size: 6em;
+    width: fit-content;
+    margin-left: -42%;
+    margin-top: -20%;
+  }
+
+  .cell {
+    font: 2em sans-serif;
+  }
+  .last {
+    margin-top: -10%;
+  }
+  .l {
+    margin-left: 20%;
+    margin-top: -30%;
+  }
+  .sec {
+    margin-left: -35%;
+  }
+
+  .des {
+    color: aliceblue;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 25%;
+}
+
+.section-left h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-left h3 {
+    text-transform: uppercase;
+}
+
+.shows {
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  .news {
+    margin-top: 20px;
+    background-color: rgba(253, 251, 251, 0.9);
+    color: rgb(14, 13, 13);
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 30%;
+  }
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 3px solid rgb(220, 231, 115);
+    width: 10%;
+  }
+  .section-left p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  
+  footer {
+    margin-top: 20px;
+    color: white;
+  }
+  
+  form input[type="email"] {
+    padding: 10px;
+    width: 85%;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border: #fff 5px solid;
+    margin-top: 2%;
+  }
+  
+  form button {
+    margin-top: 2%;
+    padding: 10px 20px;
+    width: 90%;
+    background-color: rgb(220, 231, 115);
+    color: #444242;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #fcfbfb;
+  }

@@ -1,0 +1,37 @@
+main {
+    justify-content: center;
+    display: block;
+}
+
+.main {
+    width: 100%;
+    margin-left: 20%;
+    color: white;
+}
+
+.show {
+    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 60%;
+}
+
+.buy-ticket-btn {
+    background-color: darkyellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-ticket-btn:hover {
+    background-color: yellow;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}

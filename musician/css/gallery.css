@@ -1,0 +1,23 @@
+/* Gallery styles */
+.section-lef {
+    width: 70%;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 25%; /* Each column takes up 25% of the row */
+    padding: 5px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
