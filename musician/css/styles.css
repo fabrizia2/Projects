@@ -197,9 +197,13 @@ body, ul {
   }
   
   
-  footer {
+  footer .sub {
     margin-top: 20px;
     color: white;
+  }
+
+  .sub {
+    padding: 20px;
   }
   
   form input[type="email"] {

@@ -80,6 +80,24 @@ document.querySelector('.slide').addEventListener('mouseleave', function() {
 });
 
 
+//form
+document.addEventListener('DOMContentLoaded', function() {
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form data
+        var formData = new FormData(this);
+
+        // Simulate form submission (replace this with actual form submission code)
+        console.log('Form data:', formData);
+
+        // Display confirmation message
+        document.getElementById('confirmationMessage').style.display = 'block';
+    });
+});
+
+
 
 
 

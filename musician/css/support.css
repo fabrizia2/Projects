@@ -23,7 +23,7 @@ body{
 
 .container .slide .item{
     width: 20%;
-    max-width: 100%px;
+    max-width: 100%;
     height: 300px;
     position: absolute;
     top: 50%;
@@ -95,7 +95,6 @@ body{
     margin-top: 10px;
     margin-bottom: 20px;
     color: #000;
-    background-color: rgb(219, 219, 219, 0.5);
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
@@ -148,16 +147,57 @@ body{
     color: #fff;
 }
 
-/* Add media query for smaller screens */
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    .container {
-        height: auto; /* Change height to auto for responsiveness */
+    .body {
+        overflow: hidden;
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .container .slide .item {
+        width: 90%; /* Set width to 100% for small screens */
+        max-width: none; /* Remove max-width */
+        height: aut; /* Set height to auto for responsiveness */
+        border-radius: 0; /* Remove border-radius */
+        top: 0; /* Adjust positioning */
+        left: 0; /* Adjust positioning */
+        transform: none; /* Reset transform */
     }
 
-    .container .slide .item {
-        width: 90%; /* Adjust width for responsiveness */
-        max-width: none; /* Remove max-width */
-        height: 300px; /* Adjust height for responsiveness */
-        border-radius: 10px; /* Adjust border-radius for responsiveness */
+    .item .content{
+        position: absolute;
+        top: 90%;
+        left: 0px;
+        width: 200px;
+        text-align: left;
+        color: purple;
+        transform: translate(0, -50%);
+        font-family: system-ui;
+        display: none;
+    }
+
+    .content .name{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        opacity: 0;
+        animation: animate 1s ease-in-out 1 forwards;
+    }
+    
+    .content .des{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #000;
+        background-color: rgb(219, 219, 219, 0.5);
+        opacity: 0;
+        animation: animate 1s ease-in-out 0.3s 1 forwards;
     }
 }
