@@ -32,6 +32,7 @@ h1 {
     background-color: rgb(0, 0, 0, 0.5);
     padding: 20px;
     width: 60%;
+    color: white;
   }
   
   .music-item img {
@@ -55,4 +56,20 @@ h1 {
     border: none;
     cursor: pointer;
   }
+
+  /* Add media query for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .music-item {
+      width: 90%; /* Set width to full width on smaller screens */
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    
+    .music-item img {
+      width: 100%; /* Set image width to full width */
+      height: auto; /* Allow height to adjust according to width */
+      margin-right: 0; /* Remove margin on smaller screens */
+      margin-bottom: 10px; /* Add some space between image and details */
+    }
+  }
+  
   

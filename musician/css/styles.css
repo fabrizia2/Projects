@@ -43,11 +43,14 @@ body, ul {
   }
   
   .nav-links li a:hover {
-    color: rgb(220, 231, 115); /* Change color on hover */
+    color: purple; /* Change color on hover */
+    transform: scale(1.1);
+    transition: 0.5s;
   }
   
   .nav-links li a.active {
-    color: rgb(220, 231, 115); /* Active link color */
+    color: purple; /* Active link color */
+
   }
   
   /* Social icons */
@@ -59,7 +62,10 @@ body, ul {
   }
   
   .social-icons a:hover {
-    color: rgb(220, 231, 115); /* Change color on hover */
+    color: purple; /* Change color on hover */
+    transform: scale(1.5);
+    transition: 0.5s;
+    border: purple 2px solid;
   }
   
   main {
@@ -116,6 +122,7 @@ body, ul {
     width: fit-content;
     font-family: 'Dancing Script', cursive;
     font-style: italic;
+    color: rgb(220, 231, 115);
   }
   .span-two-rows {
     grid-row: span 2; /* Span two rows */
@@ -159,9 +166,12 @@ body, ul {
 .shows {
     margin-top: 20px;
     background-color: rgb(0, 0, 0, 0.9);
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 20px;
     margin-bottom: 0;
+  }
+  .shows p {
+    color: #d3d1d1;
   }
 
   .news {
@@ -180,7 +190,6 @@ body, ul {
   }
   .section-left p {
     font-size: 1.2em;
-    color: #555;
   }
   
   section {
@@ -216,3 +225,103 @@ body, ul {
   form button:hover {
     background-color: #fcfbfb;
   }
+
+  /* Hamburger icon styles */
+.hamburger {
+  display: none; /* Initially hide the hamburger icon */
+}
+
+.bio {
+  color: rgb(220, 231, 115); 
+  font-size: 4em; 
+  font-weight: 100; 
+  margin-bottom: 10%; 
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*partners*/
+
+
+  /* Add media query for small screens */
+@media only screen and (max-width: 768px) {
+  .section-container {
+      flex-direction: column; /* Stack sections vertically on small screens */
+  }
+
+  .section-left,
+  .section-right {
+      width: 100%; /* Full width on small screens */
+  }
+
+  .bio {
+    font-size: 3em;
+  }
+
+  header {
+    padding: 10px 0;
+    align-items:first baseline;
+    position: relative;
+  }
+
+  /* Center align navigation links for small screens */
+  nav {
+      justify-content: center;
+  }
+
+  /* Reduce font size of navigation links for small screens */
+  .nav-links li a {
+      font-size: 16px;
+  }
+
+  /* Reduce font size of social icons for small screens */
+  .social-icons a {
+      font-size: 18px;
+  }
+
+  /* Show hamburger icon on small screens */
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: white; /* Set the color to white */
+    
+  }
+
+  /* Hide the navigation by default */
+  nav ul.nav-links {
+    display: none;
+  }
+
+  /* Show the navigation when the active class is applied */
+  nav.active ul.nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background-image {
+    left: 0;
+    right: -40%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Place the background image behind the content */  
+    background-position: right; /* Align background image to the right */
+  }
+
+  .span-two-rows {
+    margin-left: -72%;
+    margin-top: -40%;
+  }
+
+  .last {
+    margin-top: -20%;
+  }
+  .l {
+    margin-left: -10%;
+    margin-top: -40%;
+  }
+  .sec {
+    margin-left: -35%;
+  }
+
+}

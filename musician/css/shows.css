@@ -35,3 +35,22 @@ main {
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 768px) {
+    main {
+      justify-content: center; /* Center align main content */
+      display: block; /* Change display to block to allow full width */
+    }
+    
+    .main {
+      width: 100%; /* Set width to full width */
+      margin-left: 0; /* Remove left margin */
+    }
+  
+    .show {
+      width: 90%; /* Set width to full width */
+      margin-left: 0; /* Remove left margin */
+      margin-bottom: 20px; /* Adjust margin as needed */
+    }
+  }
+  
