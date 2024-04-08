@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the header */
+header {
+    background-color: #f2e3d9; /* Set background color */
+    color: #4d4d4d; /* Set text color */
+    padding: 20px 0; /* Add padding to the top and bottom */
+}
+
+/* Style for the header container */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center;
+    max-width: 1200px; /* Limit width */
+    margin: 0 0; /* Center the header */
+}
+
+/* Style for the navigation links */
+nav ul {
+    list-style: none; /* Remove bullet points */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+nav ul li a {
+    color: #4d4d4d; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Style for the header center */
+.header-center {
+    text-align: center; /* Center align text */
+}
+
+.header-center h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the header right */
+.header-right nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-right nav ul li {
+    margin-left: 20px; /* Add spacing between list items */
+}
+
+.header-right nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first list item */
+}
+
+.header-right nav ul li a {
+    color: #4d4d4d; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content {
+    .left-panel {
+        flex-grow: 1;
+        padding-right: px;
+        width: 50%;
+    }
+    .left-panel img {
+        max-width: 100%;
+    }
+
+    .right-panel {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        background-color: #2E424D; /* Dark teal */;
+        width: 50%;
+    }
+
+    .left-panel h1 {
+        font-size: 48px;
+        margin-top: 0;
+    }
+
+    .right-image img {
+        max-width: 100%;
+    }
+
+    .text {
+        padding-left: 50px;
+    }
+
+    .text h2 {
+        font-size: 36px;
+        margin-top: 0;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #a07856;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background-color: #855d3f;
+    }
+}
+
+/* Path: SRM/index.html */
+.second-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    
+    color: white;
+}
+.second-section {
+    .left-panel {
+        flex-grow: 1;
+        padding-right: 50px;
+        width: 50%;
+    }
+    .left-panel img {
+        max-width: 100%;
+    }
+
+    .right-panel {
+        flex-grow: 1;
+        padding-left: 50px;
+        background-color: #4b2c20;
+        width: 50%;
+    }
+
+    .image-text {
+        position: relative;
+    }
+
+    .image-text img {
+        max-width: 100%;
+    }
+
+    .image-text .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .right-panel h2 {
+        font-size: 36px;
+        margin-top: 0;
+    }
+
+    .right-panel p {
+        font-size: 18px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #d2a378;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background-color: #ae7c52;
+    }
+}
+
+/* Path: SRM/index.html */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 0 0 25%; /* Each item takes up 25% of the container width */
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+}
+
+.video-section {
+    background-color: #f5f5f5; /* Background color for the video section */
+    padding: 50px 0; /* Adjust the padding as needed */
+    
+}
+
+.video-container {
+    max-width: 100%; /* Adjust the maximum width of the video container */
+    overflow: hidden; /* Ensure the video doesn't overflow its container */
+    position: relative; /* Ensure child elements position properly */
+    padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+    margin-bottom: -20%; /* Adjust as needed */
+    height: auto; /* Allow the height to adjust automatically */
+}
+
+.video-container iframe {
+    position: absolute; /* Position the video absolutely within the container */
+    width: 100%; /* Make the video fill the container width */
+    height: 70%; /* Make the video fill the container height */
+    top: 0; /* Position the video at the top of the container */
+    left: 0; /* Position the video at the left of the container */
+}
+
+
+
+
+

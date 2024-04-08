@@ -1,0 +1,45 @@
+.booking-section {
+    padding: 50px 0;
+}
+
+.event-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event {
+    width: calc(30.33% - 30px); /* Adjust width to display 3 events per row */
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.event h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.event p {
+    margin-bottom: 10px;
+}
+
+.event .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ae7c52;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.event .btn:hover {
+    background-color: #ae7c52;
+}
