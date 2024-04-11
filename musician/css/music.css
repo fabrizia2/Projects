@@ -1,0 +1,75 @@
+main {
+    justify-content: center;
+    display: block;
+}
+
+.background-image {
+    background-image: url('../images/sheila1r.png');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 45%;
+    width: 50%;
+    height: 100%;
+    z-index: -1; /* Place the background image behind the content */  
+    background-position: right; /* Align background image to the right */
+  }
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: rgb(220, 231, 115);
+    margin-bottom: 20%;
+    font-weight: 100;
+}
+
+.music-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 60%;
+    color: white;
+  }
+  
+  .music-item img {
+    width: 40%; /* Adjust the width as needed */
+    height: 100%; /* Maintain aspect ratio */
+    margin-right: 20px;
+  }
+  
+  .music-details {
+    flex: 1;
+  }
+  
+  .music-details h2, .music-details h3, .music-details p {
+    margin: 0;
+  }
+  
+  .play-icon {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Add media query for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .music-item {
+      width: 90%; /* Set width to full width on smaller screens */
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    
+    .music-item img {
+      width: 100%; /* Set image width to full width */
+      height: auto; /* Allow height to adjust according to width */
+      margin-right: 0; /* Remove margin on smaller screens */
+      margin-bottom: 10px; /* Add some space between image and details */
+    }
+  }
+  
+  

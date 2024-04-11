@@ -1,0 +1,62 @@
+/* Style for the header */
+header {
+    background-color: #f2e3d9; /* Set background color */
+    color: #4d4d4d; /* Set text color */
+    padding: 20px 0; /* Add padding to the top and bottom */
+}
+
+/* Style for the header container */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center;
+    max-width: 1200px; /* Limit width */
+    margin: 0 0; /* Center the header */
+}
+
+/* Style for the navigation links */
+nav ul {
+    list-style: none; /* Remove bullet points */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+nav ul li a {
+    color: #4d4d4d; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Style for the header center */
+.header-center {
+    text-align: center; /* Center align text */
+}
+
+.header-center h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the header right */
+.header-right nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-right nav ul li {
+    margin-left: 20px; /* Add spacing between list items */
+}
+
+.header-right nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first list item */
+}
+
+.header-right nav ul li a {
+    color: #4d4d4d; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}

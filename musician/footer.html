@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+
+        /* Footer styles */
+        footer {
+            background-color: rgb(17, 17, 17, 0.7);
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .footer-section h3 {
+            color: #e9ba22;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .design-section {
+            flex: 1;
+            max-width: 600px;
+            align-items: center;
+            margin: 20px;
+            max-width: auto;
+            margin-top: auto;
+            max-height: 10px;
+            margin-left: auto; /* Adjust margin-left to move it to the right */
+            text-align: right; /* Align the content to the right */
+        }
+
+        .design-section a {
+            color: #e9ba22;
+            text-decoration: none;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        .footer-bottom p {
+            color: #999;
+            margin: 0;
+        }
+
+        /* Social media icons */
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: purple; /* Change color on hover */
+            transform: scale(1.5);
+            transition: 0.5s;
+            border: purple 2px solid;
+        }
+
+        /* nav styles */
+        footer nav {
+            display: block;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        footer .nav-links {
+            list-style: none;
+            display: block;
+        }
+        
+        footer .nav-links li {
+            margin: 0 10px;
+        }
+        
+        footer .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        
+        footer .nav-links li a:hover {
+            color: purple; /* Change color on hover */
+            transform: scale(1.5);
+            transition: 0.5s; /* Change color on hover */
+        }
+        
+        footer .nav-links li a.active {
+            color: purple; /* Active link color */
+        }
+
+        /* Chatbot and Recommendations */
+        #chatbot,
+        #recommendations {
+            max-width: 300px;
+            margin: 20px;
+            color: #fff;
+        }
+
+        /* Media Query for Smaller Screens */
+        @media screen and (max-width: 768px) {
+            .footer-section {
+                flex: 1 1 100%;
+                margin: 0;
+            }
+
+            .design-section {
+                flex: 1 1 100%;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Address: 123 Main Street, City, Country</li>
+                    <li>Email: info@example.com</li>
+                    <li>Phone: 123-456-7890</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="bio.html">Bio</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="shows.html">Shows</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+            </div>
+
+            <!-- Chatbot and Recommendations -->
+            <div class="footer-chatbot">
+                <i class="fas fa-comment-alt"></i>
+            </div>
+        </div>
+
+        <!-- Social media icons -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/SheilaLigeyoMusic/"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sheila_ligeyo/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCn-27qgE2_k3-IRy8-Ddv1Q"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@sheilaligeyo"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/sheila-ligeyo-469a441b3/?originalSubdomain=ke"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.boomplay.com/lyrics/94535245"><i class="fab fa-boomplay"></i></a>
+            <a href="https://soundcloud.com/sheila-adhiambo-otieno"><i class="fab fa-cloudscale"></i></a>
+            <a href="https://open.spotify.com/artist/0qvLsMNiHF5dyaMUSAL0b8"><i class="fab fa-spotify"></i></a>
+            <a href="https://music.amazon.com/artists/B095YD4CMW/sheila-ligeyo"><i class="fab fa-amazon"></i></a>
+            <a href="https://music.apple.com/us/artist/sheila-ligeyo/1569598856"><i class="fab fa-apple"></i></a>
+            <a href="https://www.shazam.com/track/572037004/let-you-know"><i class="fab fa-shazam"></i></a>
+          </div>
+
+          <div class="design-section">
+            <h3>Built By</h3>
+            <a href="https://renish-portfolio.netlify.app/">Melvin Renish</a>
+            <p>Glamour Team</p>
+          </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sheila Ligeyo. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

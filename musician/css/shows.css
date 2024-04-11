@@ -1,0 +1,56 @@
+main {
+    justify-content: center;
+    display: block;
+}
+
+.main {
+    width: 100%;
+    margin-left: 20%;
+    color: white;
+}
+
+.show {
+    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 60%;
+}
+
+.buy-ticket-btn {
+    background-color: darkyellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-ticket-btn:hover {
+    background-color: yellow;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+      justify-content: center; /* Center align main content */
+      display: block; /* Change display to block to allow full width */
+    }
+    
+    .main {
+      width: 100%; /* Set width to full width */
+      margin-left: 0; /* Remove left margin */
+    }
+  
+    .show {
+      width: 90%; /* Set width to full width */
+      margin-left: 0; /* Remove left margin */
+      margin-bottom: 20px; /* Adjust margin as needed */
+    }
+  }
+  

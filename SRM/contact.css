@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.left-section {
+    background-color: #2E424D; /* Dark teal */
+    width: 50%;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section img {
+    width: 50%;
+    height: auto;
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #f2e3d9;
+    height: auto;
+    padding: 20px;
+}
+
+
+.con {
+    text-align: center;
+}
+
+h2 {
+    color: #D2CBCB; /* Light beige */
+}
+
+p {
+    color: #B5ABA4; /* Light grey */
+}
+
+.store-info, .write-us {
+    text-align: center;
+    align-items: center;
+}
+.container {
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #F0ECEC; /* Light grey */
+    border: none;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #5E413A; /* Dark brown */
+    color: #FFFFFF; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #724941; /* Light brown */
+}
+}
