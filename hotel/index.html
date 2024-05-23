@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="main">
+            <div class="logo">
+                <img src="images/logob.png" alt="logo">
+            </div>
+
+            <ul class="nav">
+                <li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Foundation</a></li>
+                <li><a href="#">Eye Makeup</a></li>
+                <li><a href="#">Lip Makeup</a></li>
+                <li><a href="#">Contouring</a></li>
+                <li><a href="#">Hairstyling</a></li>
+                <li><a href="#"><i class="fa fa-caret-down"></i> More Tutorials</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">Bridal Makeup</a></li>
+                            <li><a href="#">Editorial Looks</a></li>
+                            <li><a href="#">Special Effects</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="menu-toggle"><i class="fa fa-bars"></i></div>
+        </div>
+
+        <div class="title">
+            <h1>Make-up tutorials</h1>
+        </div>
+
+        <div class="button">
+            <a href="#" class="btn">watch videos</a>
+            <a href="#" class="btn">basic skills</a>
+            <a href="#" class="btn">learn more</a>
+        </div>
+    </header>
+
+    <script>
+        // JavaScript for toggling the menu on small screens
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
