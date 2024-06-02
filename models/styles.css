@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: cente;
+    justify-content: cente;
+    color: white;
+    text-align: cente;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 115.5%;
+    margin-top: -2%;
+    background: linear-gradient(
+                rgb(0, 51, 102, 0.5), 
+                rgba(0, 51, 102, 0.5)
+              );
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 50%;
+    margin-left: 45%;
+    width: 50%;
+}
+
+.hero-text p {
+    font-size: 18px;
+    width: 50%;
+    margin-left: 45%;
+}
+
+/* Practice Areas Section */
+.practice-areas {
+    background: #f8f9fa;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.practice-areas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.practice-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.practice-item {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.practice-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.attorney-item img, .practice-areas img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Our Vision Section */
+.our-vision {
+    background: #003366;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.our-vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.our-vision p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.gallery {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f8f9fa; /* Adjust background color as needed */
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between gallery items */
+}
+
+.gallery-item {
+    width: calc(22.22% - 20px); /* Adjust width of gallery items */
+}
+
+.gallery-item img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.partners {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f4f4f4; /* Adjust background color as needed */
+}
+
+.partners h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between partner items */
+}
+
+.partner-item {
+    width: calc(22.22% - 20px); /* Adjust width of partner items */
+}
+
+.partner-item img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 2rem 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: #003366; /* Same background color as the vision section */
+    color: white; /* Text color */
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #ffffff; /* Text color */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Same button color as the vision section */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+
+
+section {
+    padding: 60px 20px;
+}
+
+.portfolio, .vision, .attorneys, .contact {
+    max-width: 100%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.icon-link {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #003366;
+}
+
+.video-section {
+        padding: 2rem 0;
+        text-align: center;
+        height: 100vh;
+    }
+    
+    .video-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .video-section {
+
+        .video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+        overflow: hidden;
+    }
+    
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-text {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .practice-list, .attorney-list {
+        flex-direction: column;
+    }
+
+    .attorney-item {
+        max-width: 100%;
+    }
+}
