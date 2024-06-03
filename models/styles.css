@@ -292,6 +292,9 @@ nav ul li a:hover {
 .contact-form button:hover {
     background-color: #424242; /* Darker shade of blue on hover */
 }
+.hidden {
+    display: none;
+}
 
 
 
