@@ -474,7 +474,7 @@ h2 {
         max-width: 90%;
     }
 
-    .practice-list, .attorney-list {
+    .practice-list, .gallery-container, .partners-container {
         flex-direction: column;
     }
 
