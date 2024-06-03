@@ -19,7 +19,11 @@ body {
     z-index: 1000;
 }
 
-.logo h1, h1, h2, h3 {
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+h2, h3 {
     font-family: 'Sacramento';
 }
 h1 {
@@ -120,7 +124,7 @@ nav ul li a:hover {
     font-size: 48px;
     margin-bottom: 20px;
     margin-top: 5%;
-    margin-left: 28%;
+    margin-left: 40%;
     width: 50%;
 }
 
