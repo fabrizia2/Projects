@@ -150,6 +150,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -408,29 +409,20 @@ h2 {
         height: 100vh;
     }
     
-    .video-section h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .video-section {
-
-        .video-container {
+.video-section .video-container {
         position: relative;
         width: 100%;
         padding-top: 56.25%; /* 16:9 aspect ratio */
         overflow: hidden;
     }
     
-    .video {
+.video-section  .video {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 70%;
     }
-}
-
 
 
 @media (max-width: 768px) {
@@ -478,7 +470,28 @@ h2 {
         flex-direction: column;
     }
 
-    .attorney-item {
-        max-width: 100%;
+    .practice-item, .gallery-item, .partner-item {
+        width: 60%;
+        
+    }
+
+    .video-section {
+        height: 50vh;
+    }
+    .video-section  .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-item img {
+        width: 90%;
+    }
+
+    .partner-item img {
+        width: 40%;
+        border-radius: 5px;
     }
 }
