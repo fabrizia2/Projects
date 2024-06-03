@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
 
 body {
     color: #0c0c0c;
@@ -21,18 +31,13 @@ body {
 }
 
 h1 {
-    font-family: "Sevillana", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Pacifico", cursive;
+    text-transform: uppercase;
+    font-weight: 100;
 }
 
 h2, h3 {
     font-family: 'Sacramento';
-}
-h1 {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 900;
 }
 
 .container {
@@ -127,7 +132,7 @@ nav ul li a:hover {
     font-size: 48px;
     margin-bottom: 20px;
     margin-top: 5%;
-    margin-left: 40%;
+    margin-left: 32%;
     width: 50%;
 }
 
