@@ -452,8 +452,8 @@ h2 {
     nav ul.show {
         max-height: 300px; /* Adjust as needed */
     }
-    .hero h1 {
-        font-size: 2rem;
+    .hero h1, h1 {
+        font-size: 1rem;
     }
 
     .hero p {
