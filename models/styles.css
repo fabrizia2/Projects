@@ -6,7 +6,7 @@
 }
 
 body {
-    color: #333;
+    color: #0c0c0c;
 }
 
 .header {
@@ -34,6 +34,7 @@ body {
 nav ul {
     list-style: none;
     display: flex;
+    transition: max-height 0.3s ease-out;
 }
 
 nav ul li {
@@ -48,7 +49,24 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    background-color: #080808;
+    color: #f5f3f3;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
 }
 
 .hero {
@@ -81,8 +99,8 @@ nav ul li a:hover {
     height: 115.5%;
     margin-top: -2%;
     background: linear-gradient(
-                rgb(0, 51, 102, 0.5), 
-                rgba(0, 51, 102, 0.5)
+                rgba(12, 12, 12, 0.5), 
+                rgba(13, 13, 14, 0.5)
               );
     background-size: cover;
     background-position: center;
@@ -143,7 +161,7 @@ nav ul li a:hover {
 
 /* Our Vision Section */
 .our-vision {
-    background: #003366;
+    background: #0d0d0e;
     color: white;
     padding: 2rem 1rem;
     text-align: center;
@@ -221,7 +239,7 @@ nav ul li a:hover {
     padding: 2rem 1rem;
     width: 100%;
     text-align: center;
-    background-color: #003366; /* Same background color as the vision section */
+    background-color: #0c0c0c; /* Same background color as the vision section */
     color: white; /* Text color */
 }
 
@@ -263,8 +281,8 @@ nav ul li a:hover {
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #007BFF; /* Same button color as the vision section */
-    color: white;
+    background-color: #f6f7f8; /* Same button color as the vision section */
+    color: rgb(8, 8, 8);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -272,7 +290,7 @@ nav ul li a:hover {
 }
 
 .contact-form button:hover {
-    background-color: #0056b3; /* Darker shade of blue on hover */
+    background-color: #424242; /* Darker shade of blue on hover */
 }
 
 
@@ -294,7 +312,7 @@ h2 {
 
 
 .footer {
-    background-color: #333;
+    background-color: #0e0d0d;
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -346,6 +364,24 @@ h2 {
 
 
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul.show {
+        max-height: 300px; /* Adjust as needed */
+    }
     .hero h1 {
         font-size: 2rem;
     }
