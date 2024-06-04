@@ -19,15 +19,17 @@
 
 body {
     color: #0c0c0c;
+    background-color: #050505;
 }
 
 .header {
-    background-color: #fff;
+    background-color: #080808;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    color: #f107d2;
 }
 
 h1 {
@@ -65,13 +67,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ec05c6;
     padding: 5px 10px;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #080808;
+    background-color: #fc06be;
     color: #f5f3f3;
 }
 
@@ -87,7 +89,7 @@ nav ul li a:hover {
 .hamburger {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #f705c2;
     margin: 5px 0;
 }
 
@@ -97,7 +99,7 @@ nav ul li a:hover {
     display: flex;
     align-items: cente;
     justify-content: cente;
-    color: white;
+    color: rgb(14, 13, 13);
     text-align: cente;
 }
 
@@ -121,8 +123,8 @@ nav ul li a:hover {
     height: 115.5%;
     margin-top: -2%;
     background: linear-gradient(
-                rgba(12, 12, 12, 0.5), 
-                rgba(13, 13, 14, 0.5)
+                rgba(252, 3, 218, 0.5), 
+                rgba(247, 6, 214, 0.5)
               );
     background-size: cover;
     background-position: center;
@@ -144,9 +146,9 @@ nav ul li a:hover {
 
 /* Practice Areas Section */
 .practice-areas {
-    background: #f8f9fa;
     padding: 2rem 0;
     text-align: center;
+    color: rgb(241, 10, 191);
 }
 
 .practice-areas h2 {
@@ -163,15 +165,16 @@ nav ul li a:hover {
 }
 
 .practice-item {
-    background: white;
+    background: rgb(5, 5, 5);
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 200px;
+    color: rgb(241, 10, 191);
 }
 
 .practice-iteml {
-    background: rgb(12, 12, 12, 0.5);
+    background: rgba(250, 6, 197, 0.5);
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -199,8 +202,8 @@ nav ul li a:hover {
 
 /* Our Vision Section */
 .our-vision {
-    background: #0d0d0e;
-    color: white;
+    background: #fc04e7;
+    color: rgb(7, 7, 7);
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -219,7 +222,7 @@ nav ul li a:hover {
 .gallery {
     padding: 2rem 1rem;
     text-align: center;
-    background-color: #f8f9fa; /* Adjust background color as needed */
+    border: 1px solid #ddd;
 }
 
 .gallery h2 {
@@ -262,8 +265,8 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
-    color: #fff;
+    background-color: rgba(243, 7, 212, 0.7); /* Adjust the background color and opacity as needed */
+    color: #070707;
     padding: 10px;
     margin: 0;
     text-align: center;
@@ -284,7 +287,9 @@ nav ul li a:hover {
 .partners {
     padding: 2rem 1rem;
     text-align: center;
-    background-color: #f4f4f4; /* Adjust background color as needed */
+    color: rgb(236, 7, 198);
+    background-color: #0e0d0d; /* Adjust background color as needed */
+    border: 1px solid #ddd;
 }
 
 .partners h2 {
@@ -314,8 +319,8 @@ nav ul li a:hover {
     padding: 2rem 1rem;
     width: 100%;
     text-align: center;
-    background-color: #0c0c0c; /* Same background color as the vision section */
-    color: white; /* Text color */
+    background-color: #f70ac3; /* Same background color as the vision section */
+    color: rgb(12, 12, 12); /* Text color */
 }
 
 .contact h2 {
@@ -338,7 +343,7 @@ nav ul li a:hover {
 
 .contact-info p {
     margin-bottom: 10px;
-    color: #ffffff; /* Text color */
+    color: #070707; /* Text color */
 }
 
 .contact-form input,
@@ -348,6 +353,7 @@ nav ul li a:hover {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #050505;
 }
 
 .contact-form textarea {
@@ -356,7 +362,7 @@ nav ul li a:hover {
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #f6f7f8; /* Same button color as the vision section */
+    background-color: #f308df; /* Same button color as the vision section */
     color: rgb(8, 8, 8);
     border: none;
     border-radius: 5px;
@@ -365,7 +371,7 @@ nav ul li a:hover {
 }
 
 .contact-form button:hover {
-    background-color: #424242; /* Darker shade of blue on hover */
+    background-color: #fa05d9; /* Darker shade of blue on hover */
 }
 .hidden {
     display: none;
@@ -391,7 +397,7 @@ h2 {
 
 
 .footer {
-    background-color: #0e0d0d;
+    background-color: #f708c3;
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -402,19 +408,20 @@ h2 {
 }
 
 .icon-link {
-    color: #fff;
+    color: #080808;
     margin: 0 10px;
     text-decoration: none;
 }
 
 .icon-link:hover {
-    color: #003366;
+    color: #f8f3f3;
 }
 
 .video-section {
         padding: 2rem 0;
         text-align: center;
         height: 100vh;
+        background-color: #f8f4f7;
     }
     
 .video-section .video-container {
