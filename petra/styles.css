@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-    background-color: #fff;
+    background-color: #f8f7f7;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
@@ -71,7 +71,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #080808;
+    background-color: #044c29;
     color: #f5f3f3;
 }
 
@@ -87,7 +87,7 @@ nav ul li a:hover {
 .hamburger {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #044c29;
     margin: 5px 0;
 }
 
@@ -121,8 +121,8 @@ nav ul li a:hover {
     height: 115.5%;
     margin-top: -2%;
     background: linear-gradient(
-                rgba(12, 12, 12, 0.5), 
-                rgba(13, 13, 14, 0.5)
+        rgb(4, 76, 41, 0.5), 
+        rgb(4, 76, 41, 0.5)
               );
     background-size: cover;
     background-position: center;
@@ -171,7 +171,7 @@ nav ul li a:hover {
 }
 
 .practice-iteml {
-    background: rgb(12, 12, 12, 0.5);
+    background: rgb(4, 76, 41, 0.5);
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -199,7 +199,7 @@ nav ul li a:hover {
 
 /* Our Vision Section */
 .our-vision {
-    background: #0d0d0e;
+    background: #044c29;
     color: white;
     padding: 2rem 1rem;
     text-align: center;
@@ -262,7 +262,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
+    background-color: rgb(4, 76, 41, 0.7); /* Adjust the background color and opacity as needed */
     color: #fff;
     padding: 10px;
     margin: 0;
@@ -314,7 +314,7 @@ nav ul li a:hover {
     padding: 2rem 1rem;
     width: 100%;
     text-align: center;
-    background-color: #0c0c0c; /* Same background color as the vision section */
+    background-color: #044c29; /* Same background color as the vision section */
     color: white; /* Text color */
 }
 
@@ -365,7 +365,7 @@ nav ul li a:hover {
 }
 
 .contact-form button:hover {
-    background-color: #424242; /* Darker shade of blue on hover */
+    background-color: #044c29; /* Darker shade of blue on hover */
 }
 .hidden {
     display: none;
@@ -391,8 +391,8 @@ h2 {
 
 
 .footer {
-    background-color: #0e0d0d;
-    color: #fff;
+    background-color: #044c29;
+    color: rgb(12, 12, 12, 0.5);
     padding: 1rem;
     text-align: center;
 }
@@ -408,7 +408,7 @@ h2 {
 }
 
 .icon-link:hover {
-    color: #003366;
+    color: #09e97d;
 }
 
 .video-section {

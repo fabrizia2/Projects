@@ -7,6 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="studio.css">
     <title>Responsive Image Grid</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .header h1 {
+            font-family: 'Sacramento';
+            font-size: 50px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 100px 100px 100px;
+        }
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+        }
+
+        .img-hover-zoom {
+            height: auto;
+            overflow: hidden;
+            border: 5px solid #ffff;
+        }
+
+        .img-hover-zoom img {
+            vertical-align: middle;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            transition: transform .5s ease;
+        }
+
+        .img-hover-zoom:hover img {
+            transform: scale(1.5);
+        }
+
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .delete-button {
+            display: block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,53 +94,105 @@
 
         <div class="column">
             <div class="img-hover-zoom">
-                <img src="../images/_MG_0066.jpg" style="width:100%" alt="">
+                <img src="../images/_MG_0052.jpg" style="width:100%" alt="">
             </div>
             <div class="img-hover-zoom">
-                <img src="../images/_MG_0142 (1).jpg" style="width:100%" alt="">
+                <img src="../images/_MG_0057.jpg" style="width:100%" alt="">
             </div>
             <div class="img-hover-zoom">
-                <img src="../images/_MG_9728.jpg" style="width:100%" alt="">
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="img-hover-zoom">
-                <img src="../images/_MG_0067.jpg" style="width:100%" alt="">
-            </div>
-            <div class="img-hover-zoom">
-                <img src="../images/_MG_9726.jpg" style="width:100%" alt="">
-            </div>
-            <div class="img-hover-zoom">
-                <img src="../images/_MG_9730.jpg" style="width:100%" alt="">
+                <img src="../images/_MG_0054.jpg" style="width:100%" alt="">
             </div>
         </div>
 
         <div class="column">
             <div class="img-hover-zoom">
-                <img src="../images/_MG_9735.jpg" style="width:100%" alt="">
+                <img src="../images/_MG_0059.jpg" style="width:100%" alt="">
             </div>
             <div class="img-hover-zoom">
-                <img src="../images/_MG_9741.jpg" style="width:100%" alt="">
+                <img src="../images/_MG_0061.jpg" style="width:100%" alt="">
             </div>
             <div class="img-hover-zoom">
-                <img src="../images/_MG_0144.jpg" style="width:100%" alt="">
+                <img src="../images/_MG_0058.jpg" style="width:100%" alt="">
             </div>
         </div>
 
         <div class="column">
             <div class="img-hover-zoom">
-                <img src="../images/_MG_9738.jpg" style="width:100%" alt="">
+                <img src="../images/_MG_0056.jpg" style="width:100%" alt="">
             </div>
             <div class="img-hover-zoom">
-                <img src="../images/_MG_0143.jpg" style="width:100%" alt="">
+                <img src="../images/_MG_0063.jpg" style="width:100%" alt="">
             </div>
             <div class="img-hover-zoom">
-                <img src="../images/_MG_9727.jpg" style="width:100%" alt="">
+                <img src="../images/_MG_0053.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="img-hover-zoom">
+                <img src="../images/_MG_0063.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="../images/_MG_0057.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="../images/_MG_0058.jpg" style="width:100%" alt="">
             </div>
         </div>
 
     </div>
 
+    <!-- Upload Button -->
+    <div style="margin-top: 20px; text-align: center;">
+        <input type="file" id="fileInput" accept="image/*">
+    </div>
+
+    <script>
+        const correctPassword = "yourPassword"; // Set your password here
+
+        document.getElementById('fileInput').addEventListener('change', function (event) {
+            const password = prompt("Please enter the password:");
+            if (password === correctPassword) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const imgContainer = document.createElement('div');
+                        imgContainer.classList.add('img-hover-zoom');
+
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.style.width = '100%';
+                        img.alt = '';
+
+                        const deleteButton = document.createElement('button');
+                        deleteButton.textContent = 'Delete Image';
+                        deleteButton.classList.add('delete-button');
+
+                        deleteButton.addEventListener('click', function () {
+                            const password = prompt("Please enter the password:");
+                            if (password === correctPassword) {
+                                imgContainer.remove();
+                            } else {
+                                alert("Incorrect password. Deletion canceled.");
+                            }
+                        });
+
+                        imgContainer.appendChild(img);
+                        imgContainer.appendChild(deleteButton);
+
+                        const columns = document.querySelectorAll('.column');
+                        const lastColumn = columns[columns.length - 1];
+                        lastColumn.appendChild(imgContainer);
+                    }
+                    reader.readAsDataURL(file);
+                }
+            } else {
+                alert("Incorrect password. Upload canceled.");
+                event.target.value = ''; // Clear the file input
+            }
+        });
+    </script>
 </body>
+
 </html>
