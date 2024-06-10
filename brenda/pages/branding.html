@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studio.css">
+    <title>Responsive Image Grid</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .header h1 {
+            font-family: 'Sacramento';
+            font-size: 50px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 100px 100px 100px;
+        }
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+        }
+
+        .img-hover-zoom {
+            height: auto;
+            overflow: hidden;
+            border: 5px solid #ffff;
+        }
+
+        .img-hover-zoom img {
+            vertical-align: middle;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            transition: transform .5s ease;
+        }
+
+        .img-hover-zoom:hover img {
+            transform: scale(1.5);
+        }
+
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .delete-button {
+            display: block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Branding</h1>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+
+        <div class="column">
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9779.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9790.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9795.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9784.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9793.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9806.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9809.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9787.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9802.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9793.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9802.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="../images/IMG_9784.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Upload Button -->
+    <div style="margin-top: 20px; text-align: center;">
+        <input type="file" id="fileInput" accept="image/*">
+    </div>
+
+    <script>
+        const correctPassword = "yourPassword"; // Set your password here
+
+        document.getElementById('fileInput').addEventListener('change', function (event) {
+            const password = prompt("Please enter the password:");
+            if (password === correctPassword) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const imgContainer = document.createElement('div');
+                        imgContainer.classList.add('img-hover-zoom');
+
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.style.width = '100%';
+                        img.alt = '';
+
+                        const deleteButton = document.createElement('button');
+                        deleteButton.textContent = 'Delete Image';
+                        deleteButton.classList.add('delete-button');
+
+                        deleteButton.addEventListener('click', function () {
+                            const password = prompt("Please enter the password:");
+                            if (password === correctPassword) {
+                                imgContainer.remove();
+                            } else {
+                                alert("Incorrect password. Deletion canceled.");
+                            }
+                        });
+
+                        imgContainer.appendChild(img);
+                        imgContainer.appendChild(deleteButton);
+
+                        const columns = document.querySelectorAll('.column');
+                        const lastColumn = columns[columns.length - 1];
+                        lastColumn.appendChild(imgContainer);
+                    }
+                    reader.readAsDataURL(file);
+                }
+            } else {
+                alert("Incorrect password. Upload canceled.");
+                event.target.value = ''; // Clear the file input
+            }
+        });
+    </script>
+</body>
+
+</html>
