@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+body {
+    color: #0c0c0c;
+    background-color: #050505;
+}
+
+.header {
+    background-color: #080808;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    color: #f107d2;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+h2, h3 {
+    font-family: 'Sacramento';
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    transition: max-height 0.3s ease-out;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ec05c6;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fc06be;
+    color: #f5f3f3;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #f705c2;
+    margin: 5px 0;
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: cente;
+    justify-content: cente;
+    color: rgb(14, 13, 13);
+    text-align: cente;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 115.5%;
+    margin-top: -2%;
+    background: linear-gradient(
+                rgba(252, 3, 218, 0.5), 
+                rgba(247, 6, 214, 0.5)
+              );
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 5%;
+    margin-left: 32%;
+    width: 50%;
+}
+
+.hero-text p {
+    font-size: 18px;
+    width: 50%;
+    margin-left: 45%;
+}
+
+/* Practice Areas Section */
+.practice-areas {
+    padding: 2rem 0;
+    text-align: center;
+    color: rgb(241, 10, 191);
+}
+
+.practice-areas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.practice-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.practice-item {
+    background: rgb(5, 5, 5);
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    color: rgb(241, 10, 191);
+}
+
+.practice-iteml {
+    background: rgba(250, 6, 197, 0.5);
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.practice-item h3 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+}
+.practice-areas img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.logo1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Our Vision Section */
+.our-vision {
+    background: #fc04e7;
+    color: rgb(7, 7, 7);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.our-vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.our-vision p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.gallery {
+    padding: 2rem 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between gallery items */
+}
+
+.gallery-item {
+    width: calc(22.22% - 20px); /* Adjust width of gallery items */
+    position: relative;
+}
+
+.gallery-item img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: rgba(243, 7, 212, 0.7); /* Adjust the background color and opacity as needed */
+    color: #070707;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.image-container:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+}
+
+
+.partners {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: rgb(236, 7, 198);
+    background-color: #0e0d0d; /* Adjust background color as needed */
+    border: 1px solid #ddd;
+}
+
+.partners h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between partner items */
+}
+
+.partner-item {
+    width: calc(22.22% - 20px); /* Adjust width of partner items */
+}
+
+.partner-item img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 2rem 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: #f70ac3; /* Same background color as the vision section */
+    color: rgb(12, 12, 12); /* Text color */
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #070707; /* Text color */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #050505;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #f308df; /* Same button color as the vision section */
+    color: rgb(8, 8, 8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #fa05d9; /* Darker shade of blue on hover */
+}
+.hidden {
+    display: none;
+}
+
+
+
+section {
+    padding: 60px 20px;
+}
+
+.portfolio, .vision, .attorneys, .contact {
+    max-width: 100%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Sacramento';
+}
+
+
+.footer {
+    background-color: #f708c3;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.icon-link {
+    color: #080808;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #f8f3f3;
+}
+
+.video-section {
+        padding: 2rem 0;
+        text-align: center;
+        height: 100vh;
+        background-color: #f8f4f7;
+    }
+    
+.video-section .video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+        overflow: hidden;
+    }
+    
+.video-section  .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+    }
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul.show {
+        max-height: 300px; /* Adjust as needed */
+    }
+    .hero h1, h1 {
+        font-size: 1rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-text {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .practice-list, .gallery-container, .partners-container {
+        flex-direction: column;
+    }
+
+    .practice-item, .gallery-item, .partner-item {
+        width: 60%;
+        
+    }
+
+    .video-section {
+        height: 50vh;
+    }
+    .video-section  .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-item img {
+        width: 90%;
+    }
+
+    .partner-item img {
+        width: 40%;
+        border-radius: 5px;
+    }
+}
