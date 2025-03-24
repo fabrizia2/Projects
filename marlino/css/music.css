@@ -4,7 +4,7 @@ main {
 }
 
 .background-image {
-    background-image: url('../images/sheila1r.png');
+    background-image: url('../images/_MG_2883-removebg-preview.png');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -31,7 +31,7 @@ h1 {
     margin-bottom: 20px;
     background-color: rgb(0, 0, 0, 0.5);
     padding: 20px;
-    width: 60%;
+    width: 100%;
     color: white;
   }
   
@@ -50,15 +50,21 @@ h1 {
   }
   
   .play-icon {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: darkyellow;
+    color: black;
+    padding: 6px 12px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    margin: 5px;
+  }
+
+  .play-icon:hover {
+    background-color: yellow;
   }
 
   /* Add media query for responsiveness */
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 426px) {
     .music-item {
       width: 90%; /* Set width to full width on smaller screens */
       flex-direction: column; /* Stack items vertically on smaller screens */
@@ -69,6 +75,16 @@ h1 {
       height: auto; /* Allow height to adjust according to width */
       margin-right: 0; /* Remove margin on smaller screens */
       margin-bottom: 10px; /* Add some space between image and details */
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .music-item {
+      width: 90%; /* Set width to full width on smaller screens */
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    h1 {
+      margin-left: 15px;
     }
   }
   

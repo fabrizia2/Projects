@@ -1,0 +1,249 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    }
+    
+    body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    }
+    
+    /* Container */
+    .container {
+    width: 90%;
+    margin: 0 auto;
+    }
+    
+    /* Header */
+    .header {
+    background-color: #333;
+    color: rgb(239, 238, 244);
+    padding: 20px 0;
+    }
+    .header .logo h1 {
+    font-size: 2rem;
+    }
+    
+    .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    }
+    
+    .nav ul li {
+    margin-left: 20px;
+    }
+    
+    .nav ul li a {
+    color: rgb(244, 248, 250);
+    text-decoration: none;
+    font-size: 1rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: rgb(36, 6, 75);
+    text-align: center;
+    padding: 100px 0;
+    }
+    .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    }
+    
+    .hero p {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+    }
+    
+    .cta-button {
+    background-color: #ff9900;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    }
+
+    /* About Us Section */
+.about {
+padding: 60px 0;
+background-color: #fff;
+text-align: center;
+}
+
+.about h2 {
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+padding: 60px 0;
+background-color: #f9f9f9;
+}
+
+.services h2 {
+ text-align: center;
+ font-size: 2rem;
+ margin-bottom: 40px;
+}
+
+ .service-cards {
+ display: flex;
+ justify-content: space-between;
+}
+ .service-card {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 5px;
+ width: 30%;
+ text-align: center;
+}
+
+ .service-card h3 {
+ font-size: 1.5rem;
+ margin-bottom: 10px;
+}
+
+ .service-card p {
+ font-size: 1rem;
+ }
+
+/* Portfolio Section */
+ .portfolio {
+ padding: 60px 0;
+ background-color: #fff;
+ text-align: center;
+}
+
+.portfolio h2 {
+font-size: 2rem;
+margin-bottom: 40px;
+}
+
+.portfolio-gallery {
+display: flex;
+justify-content: space-between;
+}
+
+.portfolio-gallery img {
+width: 30%;
+border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials {
+padding: 60px 0;
+background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 40px;
+}
+
+.testimonial {
+text-align: center;
+margin-bottom: 20px;
+}
+.testimonial p {
+font-size: 1.2rem;
+margin-bottom: 5px;
+}
+
+/* Contact Section*/
+.contact {
+padding: 60px 0;
+background-color: #fff;
+}
+
+.contact h2 {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 40px;
+}
+
+.contact form {
+max-width: 600px;
+margin: 0 auto;
+text-align: left;
+}
+
+.contact label {
+display: block;
+font-size: 1rem;
+margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+.contact button {
+background-color: #ff9900;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 1rem;
+}
+}
+/* Footer */
+.footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+.service-cards {
+flex-direction: column;
+align-items: center;
+}
+.service-card {
+width: 80%;
+margin-bottom: 20px;
+}
+
+.portfolio-gallery {
+flex-direction: column;
+align-items: center;
+}
+
+portfolio-gallery img {
+width: 80%;
+margin-bottom: 20px;
+}
+}
+
+
+@media (max-width: 480px) {
+hero h2 {
+font-size: 2rem;
+}
+
+.cta-button {
+font-size: 1rem;
+padding: 8px 15px;
+}
+.header .nav ul {
+flex-direction: column;
+text-align: center;
+}
+
+.header .nav ul li {
+margin: 10px 0;
+}
+}

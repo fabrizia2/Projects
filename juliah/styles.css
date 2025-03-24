@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+
+.main-content {
+    display: flex;
+    height: 100vh;
+    padding-top: 60px; /* To offset the fixed header */
+}
+
+.left-content {
+    background: url('../euphy/images/s\ \(11\).jpg') no-repeat center center/cover;
+    color: white;
+    flex: 1;
+    background-color: #f44336;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-content .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.left-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.left-content h1 {
+    margin: 0.5em 0;
+    font-size: 4em;
+    line-height: 1.2;
+}
+
+.left-content p {
+    font-size: 1.2em;
+}
+
+.left-content .button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.right-content {
+    flex: 1;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.album-art img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.album-details {
+    margin-top: 20px;
+}
+
+.album-details h3 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.album-details p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.album-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.album-details ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.album-details ul li span {
+    color: #888;
+}
+
+.purchase-links {
+    display: flex;
+    gap: 10px;
+}
+
+.purchase-links a {
+    text-decoration: none;
+    color: #d32f2f;
+}
+
+.social-icons {
+    background-color: #d32f2f;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40px;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fcf9f9;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+
+a:hover {
+    color: #d32f2f;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}

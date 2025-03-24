@@ -18,11 +18,12 @@ body, ul {
     width: 100%;
     z-index: 100;
     align-items: center;
+    justify-content: space-between;
   }
   
   nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
   }
   
@@ -91,7 +92,7 @@ body, ul {
   
 
 .background-image {
-  background-image: url('../images/sheila1r.png');
+  background-image: url('../images/_MG_2883-removebg-preview.png');
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -126,20 +127,24 @@ body, ul {
   }
   .span-two-rows {
     grid-row: span 2; /* Span two rows */
-    font-size: 6em;
+    font-size: 5em;
     width: fit-content;
-    margin-left: -42%;
-    margin-top: -20%;
+    margin-left: -34%;
+    margin-top: -25%;
   }
 
   .cell {
-    font: 2em sans-serif;
+    font: 2.5em sans-serif;
   }
   .last {
     margin-top: -10%;
   }
+  .ul {
+    margin-left: -40%;
+    margin-top: -12%;
+  }
   .l {
-    margin-left: 20%;
+    margin-left: 25%;
     margin-top: -30%;
   }
   .sec {
@@ -151,6 +156,19 @@ body, ul {
     font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 25%;
+}
+
+.buy-ticket-btn {
+  background-color: darkyellow;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-ticket-btn:hover {
+  background-color: yellow;
 }
 
 .section-left h2 {
@@ -248,7 +266,7 @@ body, ul {
 
 
   /* Add media query for small screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .section-container {
       flex-direction: column; /* Stack sections vertically on small screens */
   }
@@ -264,13 +282,13 @@ body, ul {
 
   header {
     padding: 10px 0;
-    align-items:first baseline;
+    align-items: center;
     position: relative;
   }
 
   /* Center align navigation links for small screens */
   nav {
-      justify-content: center;
+      margin:0 7px;
   }
 
   /* Reduce font size of navigation links for small screens */
@@ -313,19 +331,39 @@ body, ul {
   }
 
   .span-two-rows {
-    margin-left: -72%;
-    margin-top: -40%;
+    margin-left: -47%;
+    margin-top: -18%;
+    font-size: 4em;
   }
 
-  .last {
-    margin-top: -20%;
+  .ul {
+    margin-top: -25%;
+    margin-left: -37%;
   }
   .l {
-    margin-left: -10%;
     margin-top: -40%;
   }
   .sec {
     margin-left: -35%;
   }
 
+}
+
+@media only screen and (max-width: 375px) {
+  .span-two-rows {
+    margin-left: -47%;
+    margin-top: -18%;
+    font-size: 4em;
+  }
+
+  .ul {
+    margin-top: -30%;
+    margin-left: -44%;
+  }
+  .l {
+    margin-top: -40%;
+  }
+  .sec {
+    margin-left: -35%;
+  }
 }
